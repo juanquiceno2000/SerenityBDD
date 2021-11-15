@@ -149,7 +149,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 13-11-2021 13:43</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 15-11-2021 13:49</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -198,10 +198,10 @@
                                                             </div>
                                                             <script>
 
-                                                                var labels = [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', '100%', ' ', ' ', ' '];
+                                                                var labels = [' ', ' ', ' ', ' ', '100%', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '];
                                                                 // Our series array that contains series objects or in this case series data arrays
 
-                                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 0}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 1}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
+                                                                var series = [{meta: 'Passing tests (automated)', value: 0}, {meta: 'Passing tests (manual)', value: 0}, {meta: 'Pending tests (automated)', value: 0}, {meta: 'Pending tests (manual)', value: 0}, {meta: 'Ignored tests (automated)', value: 1}, {meta: 'Ignored tests (manual)', value: 0}, {meta: 'Skipped tests (automated)', value: 0}, {meta: 'Skipped tests (manual)', value: 0}, {meta: 'Failing tests (automated)', value: 0}, {meta: 'Failing tests (manual)', value: 0}, {meta: 'Broken tests (automated)', value: 0}, {meta: 'Broken tests (manual)', value: 0}, {meta: 'Compromised tests (automated)', value: 0}, {meta: 'Compromised tests (manual)', value: 0}];
 
                                                                 // As options we currently only set a static size of 300x200 px. We can also omit this and use aspect ratio containers
                                                                 // as you saw in the previous example
@@ -270,11 +270,12 @@
                                                                 <td class="automated-stats"> </td>
                                                             </tr>
                                                             <tr>
-                                                                    <td class="aggregate-result-count"><i
-                                                                                class='fa fa-ban ignored-icon'></i>&nbsp;Ignored
+                                                                    <td class="aggregate-result-count">
+                                                                        <a href="5df1f9e4c1a03c41649ff7b11e79c1aeaba6fdb01f2cf8038fc3f7472ebe5034.html"><i
+                                                                                    class='fa fa-ban ignored-icon'></i>&nbsp;Ignored</a>
                                                                     </td>
-                                                                <td class="automated-stats">0</td>
-                                                                <td class="automated-stats"> </td>
+                                                                <td class="automated-stats">1</td>
+                                                                <td class="automated-stats">100%</td>
                                                             </tr>
                                                             <tr>
                                                                     <td class="aggregate-result-count"><i
@@ -284,9 +285,8 @@
                                                                 <td class="automated-stats"> </td>
                                                             </tr>
                                                             <tr>
-                                                                        <td colspan="3"><a
-                                                                                    href="3c6cce3d5f9a41b3c054c1c3ace6273cfa8bd3aeda6c4fc25fb2d021dfb7365b.html"><i
-                                                                                        class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
+                                                                        <td colspan="3"><i
+                                                                                    class='fa fa-times failure-icon'></i>&nbsp;<em>Unsuccessful</em></a>
                                                                         </td>
                                                             </tr>
                                                             <tr>
@@ -298,11 +298,11 @@
                                                                 <td class="automated-stats"> </td>
                                                             <tr>
                                                                     <td class="aggregate-result-count indented-error-category">
-                                                                        <a href="f5fea3d7e5bdc8fec19c0211573a4b84844822c8c2b25843a9958d977ca8f8e5.html"><i
-                                                                                    class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken</a>
+                                                                        <i
+                                                                                class='fa fa-exclamation-triangle error-icon'></i>&nbsp;Broken
                                                                     </td>
-                                                                <td class="automated-stats">1</td>
-                                                                <td class="automated-stats">100%</td>
+                                                                <td class="automated-stats">0</td>
+                                                                <td class="automated-stats"> </td>
                                                             <tr>
                                                                     <td class="aggregate-result-count indented-error-category">
                                                                         <i
@@ -335,11 +335,11 @@
                                                             </thead>
                                                             <tbody>
                                                             <tr>
-                                                                <td>11s</td>
-                                                                <td>11ms</td>
-                                                                <td>10s</td>
-                                                                <td>10s</td>
-                                                                <td>11s</td>
+                                                                <td>943ms</td>
+                                                                <td>0ms</td>
+                                                                <td>769ms</td>
+                                                                <td>769ms</td>
+                                                                <td>943ms</td>
                                                             </tr>
                                                             </tbody>
                                                         </table>
@@ -371,15 +371,15 @@
                                                                                 <td>1</td>
                                                                                 <td>0%</td>
                                                                                 <td>
-                                                                                        <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                                                        <a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
                                                                                 </td>
                                                                                 <td>
                                                                                     <div class="progress">
                                                                                             <div class="progress-bar"
                                                                                                  role="progressbar"
-                                                                                                 style="width: 100%; background-color: darkorange"
+                                                                                                 style="width: 100%; background-color: darkgrey"
                                                                                                  aria-valuenow="1"
-                                                                                                 title="100% error"
+                                                                                                 title="100% ignored"
                                                                                                  aria-valuemin="0"
                                                                                                  aria-valuemax="100">
                                                                                             </div>
@@ -393,15 +393,15 @@
                                                                                 <td>1</td>
                                                                                 <td>0%</td>
                                                                                 <td>
-                                                                                        <a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a>
+                                                                                        <a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
                                                                                 </td>
                                                                                 <td>
                                                                                     <div class="progress">
                                                                                             <div class="progress-bar"
                                                                                                  role="progressbar"
-                                                                                                 style="width: 100%; background-color: darkorange"
+                                                                                                 style="width: 100%; background-color: darkgrey"
                                                                                                  aria-valuenow="1"
-                                                                                                 title="100% error"
+                                                                                                 title="100% ignored"
                                                                                                  aria-valuemin="0"
                                                                                                  aria-valuemax="100">
                                                                                             </div>
@@ -413,44 +413,24 @@
                                                         </div>
                                                     </div>
 
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h3>Test Failure Overview</h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row">
-                                                        <div class="col-sm-6">
-                                                            <h4>Most Frequent Failures</h4>
-                                                            <table class="table">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="error-color top-list-title">
-                                                                            <a href="2bd56680074869a00ca2bf85471d5a0d88723de44b6d18cd788a4d6e0fec8629.html"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> Invocation target exception</a>
-                                                                        </td>
-                                                                        <td><span
-                                                                                    class="badge failure-badge">1</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                        <div class="col-sm-6">
-                                                            <h4>Most Unstable Features</h4>
-                                                            <table class="table">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td class="failure-color top-list-title"><a
-                                                                                    href="acf8884de1d790170b746042911ab97449d82959e0cb15854f15db25c2b4fed2.html">Finding new cars</a>
-                                                                        </td>
-                                                                        <td><span
-                                                                                    class="badge failure-badge">100%</span>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
 
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <h3>Tags</h3>
+
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <div>
+                                                                                <a href="863c7dfb74dc54da885c3d0cc2b7101f942c2f9e85daa5a4104cedf8c6b38898.html">
+                                                                        <span class="badge"
+                                                                              style="background-color:#777777; margin:1em;padding:4px;"><i
+                                                                                    class="fa fa-tag"></i> Ignored&nbsp;&nbsp;&nbsp;1</span>
+                                                                                </a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                    </div>
                                             </div>
                                         </div>
                                         <div id="tests" class="tab-pane fade">
@@ -472,7 +452,7 @@
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                    <tr class="scenario-result ERROR">
+                                                                    <tr class="scenario-result IGNORED">
                                                                         <td>
                                                                                 <a href="76284ace3ee13c4ea49a6c741abf0bd6b2cba385eafe4c8b1413f2810b6ff15f.html">Finding new cars</a>
                                                                         </td>
@@ -481,10 +461,10 @@
                                                                                 (1 example)
                                                                         </td>
                                                                         <td>4</td>
-                                                                        <td>13:42:31</td>
-                                                                        <td>00:11</td>
-                                                                        <td><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon ' title='ERROR'></i></a> <span
-                                                                                    style="display:none">ERROR</span>
+                                                                        <td>13:48:37</td>
+                                                                        <td>00:00</td>
+                                                                        <td><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a> <span
+                                                                                    style="display:none">IGNORED</span>
                                                                         </td>
                                                                     </tr>
                                                                 </tbody>

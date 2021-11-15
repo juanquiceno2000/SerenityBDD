@@ -4,24 +4,27 @@ import org.junit.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import net.serenitybdd.core.pages.PageObject;
 import pages.LoginPage;
 import pages.SwagLabsHomePage;
 
 public class LoginSteps {
 
+    //region Variables
     LoginPage loginPage;
     SwagLabsHomePage swagLabsHomePage;
     private boolean result = false;
-
+    //endregion
 
     //@Steps
 
+    //region Given
     @Given("^a user in the Login Page$")
     public void a_user_in_the_login_page() throws Throwable {
         loginPage.open();
     }
+    //endregion
 
+    //region When
     @When("^the user enters an incorrect UserName$")
     public void the_user_enters_an_incorrect_username() throws Throwable {
         loginPage.typeInUserIncorrectNameField();
@@ -34,7 +37,7 @@ public class LoginSteps {
 
     @When("^click on Login Button$")
     public void click_on_login_button() throws Throwable {
-        loginPage.clickOnLoginButton();
+        swagLabsHomePage = loginPage.clickOnLoginButton();
     }
 
     @When("^the user enters expected UserName$")
@@ -56,26 +59,27 @@ public class LoginSteps {
     public void the_user_doesnt_enter_password_in_the_password_field() throws Throwable {
 
     }
+    //endregion
 
+    //region Then
     @Then("^the system throws the error \"([^\"]*)\" message$")
     public void the_system_throws_the_error_something_message(String loginErrorMessage) throws Throwable {
-      if (loginPage.getTextLoginErrorMessage().contains(loginErrorMessage))
-      {
-          result = true;
-      }
-      Assert.assertTrue(result);
-      result = false;
-      loginPage.getDriver().quit();
-    }
-
-    @Then("^the system grant access by leaving the user on the Home Page in \"([^\"]*)\" section$")
-    public void the_system_grant_access_by_leaving_the_user_on_the_home_page_in_something_section(String tittleHomePage) throws Throwable {
-        if (swagLabsHomePage.getTextProductsTittleHomePage().contains(tittleHomePage))
-        {
+        if (loginPage.getTextLoginErrorMessage().equals(loginErrorMessage)) {
             result = true;
         }
         Assert.assertTrue(result);
         result = false;
         loginPage.getDriver().quit();
     }
+
+    @Then("^the system grant access by leaving the user on the Home Page in \"([^\"]*)\" section$")
+    public void the_system_grant_access_by_leaving_the_user_on_the_home_page_in_something_section(String tittleHomePage) throws Throwable {
+        if (swagLabsHomePage.getTextProductsTittleHomePage().equals(tittleHomePage)) {
+            result = true;
+        }
+        Assert.assertTrue(result);
+        result = false;
+        loginPage.getDriver().quit();
+    }
+    //endregion
 }

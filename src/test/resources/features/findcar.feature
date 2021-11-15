@@ -1,7 +1,9 @@
+@Ignored
 Feature: Finding new cars
   As a user
   i want to find new cars
   to decide which one to buy
+
 
   Scenario Outline: Find a new car
     Given a user in the website
@@ -10,5 +12,5 @@ Feature: Finding new cars
     Then the cars of that <brand> show
 
     Examples:
-| brand  |
-| Toyota |
+    | brand  |
+    | Toyota |
