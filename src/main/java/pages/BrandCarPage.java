@@ -1,6 +1,5 @@
 package pages;
 
-
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 

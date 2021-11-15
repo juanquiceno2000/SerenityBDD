@@ -1,6 +1,5 @@
 package cucumberSteps;
 
-import net.thucydides.core.annotations.Steps;
 import org.junit.Assert;
 import pages.BrandCarPage;
 import pages.HomePage;
@@ -12,12 +11,13 @@ import pages.NewCarsPage;
 
 public class NewCarSteps {
 
+    //@Steps
+    //CarWaleSteps steps;
+
     HomePage home;
     NewCarsPage newCarsPage;
     BrandCarPage brandCarPage;
 
-    //@Steps
-    //CarWaleSteps steps;
 
     @Given("^a user in the website$")
     public void a_user_in_the_website() {

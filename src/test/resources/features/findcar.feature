@@ -11,6 +11,4 @@ Feature: Finding new cars
 
     Examples:
 | brand  |
-| Kia    |
 | Toyota |
-| Honda  |
