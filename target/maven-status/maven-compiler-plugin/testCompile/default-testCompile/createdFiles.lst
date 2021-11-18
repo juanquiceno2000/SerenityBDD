@@ -1,8 +1,0 @@
-runner\RunCuke.class
-pages\NewCarsPage.class
-pages\LoginPage.class
-pages\HomePage.class
-cucumberSteps\LoginSteps.class
-cucumberSteps\NewCarSteps.class
-pages\BrandCarPage.class
-pages\SwagLabsHomePage.class
