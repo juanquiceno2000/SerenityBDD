@@ -5,13 +5,13 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import PageObject.LoginPage;
-import PageObject.SwagLabsHomePage;
+import PageObject.HomePage;
 
 public class LoginSteps {
 
     //region Variables
     LoginPage loginPage;
-    SwagLabsHomePage swagLabsHomePage;
+    HomePage swagLabsHomePage;
     private boolean result = false;
     //endregion
 
@@ -27,12 +27,12 @@ public class LoginSteps {
     //region When
     @When("^the user enters an incorrect UserName$")
     public void the_user_enters_an_incorrect_username() throws Throwable {
-        loginPage.typeInUserIncorrectNameField();
+        loginPage.typeInUserFieldIncorrectName();
     }
 
     @When("^the user enters expected Password$")
     public void the_user_enters_expected_password() throws Throwable {
-        loginPage.typeInExpectedPasswordField();
+        loginPage.typeInPasswordFieldExpectedPassword();
     }
 
     @When("^click on Login Button$")
@@ -42,12 +42,12 @@ public class LoginSteps {
 
     @When("^the user enters expected UserName$")
     public void the_user_enters_expected_username() throws Throwable {
-        loginPage.typeInUserExpectedNameField();
+        loginPage.typeInUserFieldExpectedName();
     }
 
     @When("^the user enters an incorrect Password$")
     public void the_user_enters_an_incorrect_password() throws Throwable {
-        loginPage.typeInIncorrectPasswordField();
+        loginPage.typeInPasswordFieldIncorrectPassword();
     }
 
     @When("^the user doesn't enter UserName in the Username field$")

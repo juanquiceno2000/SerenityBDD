@@ -13,19 +13,19 @@ public class LoginPage extends PageObject {
     //endregion
 
     //region Actions
-    public void typeInUserIncorrectNameField() {
+    public void typeInUserFieldIncorrectName() {
         find(userNameField).sendKeys("RandomName");
     }
 
-    public void typeInUserExpectedNameField() {
+    public void typeInUserFieldExpectedName() {
         find(userNameField).sendKeys("standard_user");
     }
 
-    public void typeInIncorrectPasswordField() {
+    public void typeInPasswordFieldIncorrectPassword() {
         find(passwordField).sendKeys("RandomPassword");
     }
 
-    public void typeInExpectedPasswordField() {
+    public void typeInPasswordFieldExpectedPassword() {
         find(passwordField).sendKeys("secret_sauce");
     }
 
@@ -33,9 +33,9 @@ public class LoginPage extends PageObject {
         return find(loginErrorMessage).getText();
     }
 
-    public SwagLabsHomePage clickOnLoginButton() {
+    public HomePage clickOnLoginButton() {
         find(loginButton).click();
-        return this.switchToPage(SwagLabsHomePage.class);
+        return this.switchToPage(HomePage.class);
     }
     //endregion
 }

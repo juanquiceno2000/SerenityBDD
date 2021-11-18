@@ -5,14 +5,13 @@ import org.openqa.selenium.By;
 
 public class HomePage extends PageObject {
 
-    By newCarMenu = By.xpath("//div[normalize-space()='NEW CARS']");
-    By findNewCarLink = By.cssSelector("a[href='/new-cars/']");
+    //region Components
+    By productsTittle = By.xpath("//span[@class='title']");
+    //endregion
 
-    public NewCarsPage FindNewCars() throws InterruptedException {
-
-        withAction().moveToElement(find(newCarMenu)).perform();
-        clickOn(find(findNewCarLink));
-        return this.switchToPage(NewCarsPage.class);
-
+    //region Actions
+    public String getTextProductsTittleHomePage() {
+        return find(productsTittle).getText();
     }
+    //endregion
 }
