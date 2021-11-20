@@ -1,18 +1,20 @@
 package Steps;
 
+import POJO.JsonBodyRequests.ReadBookingsIds;
 import PageObject.HomePage;
 import PageObject.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.junit.Assert;
 
 public class APISteps {
 
     //region Variables
-    LoginPage loginPage;
-    HomePage swagLabsHomePage;
-    private boolean result = false;
+    public boolean result = false;
+    public int statusCode;
     //endregion
 
     //@Steps
@@ -25,7 +27,7 @@ public class APISteps {
     //region When
     @When("^sends Get Method$")
     public void sends_get_method() throws Throwable {
-
+        statusCode = ReadBookingsIds.GetBookingIds();
     }
 
     @When("^sends Post Method$")
@@ -36,8 +38,13 @@ public class APISteps {
 
     //region Then
     @Then("^the response code should be \"([^\"]*)\"$")
-    public void the_response_code_should_be_something(String strArg1) throws Throwable {
-
+    public void the_response_code_should_be_something(int expectedStatusCode) throws Throwable {
+        if (expectedStatusCode == statusCode)
+        {
+            result = true;
+        }
+        Assert.assertTrue(result);
+        result = false;
     }
     //endregion
 }
