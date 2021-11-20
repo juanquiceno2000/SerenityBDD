@@ -1,5 +1,6 @@
 package Steps;
 
+import POJO.JsonBodyRequests.CreateBooking;
 import POJO.JsonBodyRequests.ReadBookingsIds;
 import PageObject.HomePage;
 import PageObject.LoginPage;
@@ -32,7 +33,7 @@ public class APISteps {
 
     @When("^sends Post Method$")
     public void sends_post_method() throws Throwable {
-
+        statusCode = CreateBooking.CreateBrandNewBooking();
     }
     //endregion
 
