@@ -1,5 +1,5 @@
 Feature: API
-  Verify APIs with RestSharp
+  Verify APIs with RestAssured
 
 
   Scenario: GET Method
