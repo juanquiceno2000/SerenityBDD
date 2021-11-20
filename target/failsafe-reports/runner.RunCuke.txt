@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: runner.RunCuke
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.084 s - in runner.RunCuke
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 41.589 s <<< FAILURE! - in runner.RunCuke
+POST Method(API)  Time elapsed: 4.549 s  <<< FAILURE!
+java.lang.AssertionError
+

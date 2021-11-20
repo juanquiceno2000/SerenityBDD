@@ -1,0 +1,6 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Login to the App","Login Failed due to incorrect UserName","SUCCESS","2021-11-19T21:57:27.349-05:00[America/Bogota]","0.0","4.64"
+"Login to the App","Login Failed due to incorrect Password","SUCCESS","2021-11-19T21:57:31.993-05:00[America/Bogota]","0.0","5.05"
+"Login to the App","Validate Mandatory UserName Field","SUCCESS","2021-11-19T21:57:37.046-05:00[America/Bogota]","0.0","5.03"
+"Login to the App","Validate Mandatory Password Field","SUCCESS","2021-11-19T21:57:42.077-05:00[America/Bogota]","0.0","4.39"
+"Login to the App","Login Successfully","SUCCESS","2021-11-19T21:57:46.471-05:00[America/Bogota]","0.0","4.95"
