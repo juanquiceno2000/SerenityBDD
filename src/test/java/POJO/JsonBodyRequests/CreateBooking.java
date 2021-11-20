@@ -24,8 +24,7 @@ public class CreateBooking {
     public static int CreateBrandNewBooking() {
         RequestSpecification request =
                 RestAssured.given()
-                        .baseUri(postBrandNewBooking)
-                        .basePath("/booking");
+                        .baseUri(postBrandNewBooking);
 
         request.header("Content-Type", "application/json");
         request.header("Accept", "*/*");
