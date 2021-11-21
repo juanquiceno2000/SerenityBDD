@@ -3,7 +3,7 @@ package PageObject;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-public class LoginPage extends PageObject {
+public class LoginPage extends MyProjectPage {
 
     //region Components
     By userNameField = By.cssSelector("#user-name");

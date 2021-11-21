@@ -1,6 +1,0 @@
-runner\RunCuke.class
-PageObject\LoginPage.class
-Steps\APISteps.class
-Steps\LoginSteps.class
-PageObject\HomePage.class
-POJO\JsonBodyRequests\ReadBookingsIds.class

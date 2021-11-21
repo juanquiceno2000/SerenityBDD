@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="API" skipped="0" tests="2" time="12.06" timestamp="2021-11-19 09:57:13"><testcase name="GET Method"/><testcase name="POST Method"><failure type="java.lang.AssertionError"/><system-err>null&#13;
-Steps.APISteps.the_response_code_should_be_something(APISteps.java:46)&#13;
-✽.the response code should be "200"(src/test/resources/Features/API.feature:14)&#13;
-</system-err></testcase></testsuite>

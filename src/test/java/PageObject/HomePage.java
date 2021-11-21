@@ -3,7 +3,7 @@ package PageObject;
 import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
-public class HomePage extends PageObject {
+public class HomePage extends MyProjectPage {
 
     //region Components
     By productsTittle = By.xpath("//span[@class='title']");
