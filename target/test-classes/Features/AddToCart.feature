@@ -7,10 +7,10 @@ Feature: Add To Cart
     Then the product <Product Name> should not be listed on Product Section
 
     Examples:
-      | Product Name        | Product Price  |
-      | PS5                 | 49.99          |
-      | PS4                 | 49.99          |
-      | PS3                 | 49.99          |
+      | Product Name        |
+      | PS5                 |
+      | PS4                 |
+      | PS3                 |
 
 
   Scenario Outline: Products that should be listed in Products Section
@@ -33,7 +33,7 @@ Feature: Add To Cart
 
     Examples:
       | Product Name              | Product Price  |
-      | Sauce Labs Backpack       | 49.99          |
-      | Sauce Labs Fleece Jacket  | 49.99          |
-      | Sauce Labs Onesie         | 49.99          |
+      | Sauce Labs Backpack       | $29.99         |
+      | Sauce Labs Fleece Jacket  | $49.99         |
+      | Sauce Labs Onesie         | $7.99          |
     

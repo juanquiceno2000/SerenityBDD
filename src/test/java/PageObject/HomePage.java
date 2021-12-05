@@ -12,11 +12,11 @@ public class HomePage extends MyProjectPage {
 
     //region Components
     By productsTittle = By.xpath("//span[@class='title']");
-    String firstBlockToAddCartXpath = "//div[@id='inventory_container']//div[@class='inventory_item']//div[@class='inventory_item_description']//div[@class='inventory_item_label']//a//div/following::div[@class=\"pricebar\"][";
     //endregion
 
     //region Variables
     List<String> nameProductList = new ArrayList<>();
+    String firstBlockToAddCartXpath = "//div[@id='inventory_container']//div[@class='inventory_item']//div[@class='inventory_item_description']//div[@class='inventory_item_label']//a//div/following::div[@class=\"pricebar\"][";
     //endregion
 
     //region Actions
