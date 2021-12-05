@@ -12,6 +12,7 @@ public class HomePage extends MyProjectPage {
 
     //region Components
     By productsTittle = By.xpath("//span[@class='title']");
+    String firstBlockToAddCartXpath = "//div[@id='inventory_container']//div[@class='inventory_item']//div[@class='inventory_item_description']//div[@class='inventory_item_label']//a//div/following::div[@class=\"pricebar\"][";
     //endregion
 
     //region Variables
@@ -30,6 +31,20 @@ public class HomePage extends MyProjectPage {
             nameProductList.add(productList.get(i-1).getText());
         }
         return nameProductList;
+    }
+
+    public YourCartPage addToCartSpecificProduct(String productName) {
+        List<WebElementFacade> productList = findAll("//div[@id='inventory_container']//div[@class='inventory_item']//div[@class='inventory_item_description']//div[@class='inventory_item_label']//a//div");
+        for (int i = 0; i <= productList.stream().count(); i++) {
+            if (productList.get(i).getText().contains(productName))
+            {
+                firstBlockToAddCartXpath = firstBlockToAddCartXpath + (i + 1) + "]//button";
+                By addToCartButton = By.xpath(firstBlockToAddCartXpath);
+                clickOn(find(addToCartButton));
+                break;
+            }
+        }
+        return this.switchToPage(YourCartPage.class);
     }
     //endregion
 }
