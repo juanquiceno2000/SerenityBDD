@@ -29,7 +29,9 @@ Feature: Add To Cart
     Given a user in the Home Page within "PRODUCTS" section
     When search for <Product Name>
     And add to the cart the <Product Name> just found
-    Then the product <Product Name> should be listed on Your Cart Section with expected <Product Price>
+    And navigate to Your Cart section
+    Then the user should be located in "YOUR CART" section
+    And the product <Product Name> should be listed on Your Cart Section with expected <Product Price>
 
     Examples:
       | Product Name              | Product Price  |

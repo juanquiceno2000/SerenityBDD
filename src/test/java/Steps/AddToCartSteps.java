@@ -34,7 +34,7 @@ public class AddToCartSteps {
         loginPage.typeInPasswordFieldExpectedPassword();
         swagLabsHomePage = loginPage.clickOnLoginButton();
 
-        if (swagLabsHomePage.getTextProductsTittleHomePage().equals(tittleHomePage)) {
+        if (swagLabsHomePage.getTextHomePageTitle().equals(tittleHomePage)) {
             result = true;
         }
         Assert.assertTrue(result);
@@ -45,12 +45,17 @@ public class AddToCartSteps {
     //region When
     @When("^search for (.+)$")
     public void search_for(String productName) throws Throwable {
-        nameProductList = swagLabsHomePage.getProductsFromWebPage();
+        nameProductList = swagLabsHomePage.getProductsFromHomeWebPage();
     }
 
     @When("^add to the cart the (.+) just found$")
     public void add_to_the_cart_the_just_found(String productName) throws Throwable {
         swagLabsHomePage.addToCartSpecificProduct(productName);
+    }
+
+    @When("^navigate to Your Cart section$")
+    public void navigate_to_your_cart_section() throws Throwable {
+        swagLabsHomePage.navigateToYourCartSection();
     }
     //endregion
 
@@ -81,9 +86,32 @@ public class AddToCartSteps {
         loginPage.getDriver().quit();
     }
 
+    @Then("^the user should be located in \"([^\"]*)\" section$")
+    public void the_user_should_be_located_in_something_section(String tittleYourCartPage) throws Throwable {
+        if (yourCartPage.getTextYourCartPageTitle().equals(tittleYourCartPage)) {
+            result = true;
+        }
+        Assert.assertTrue(result);
+        result = false;
+    }
+
     @Then("^the product (.+) should be listed on Your Cart Section with expected (.+)$")
     public void the_product_should_be_listed_on_your_cart_section_with_expected(String productName, String productPrice) throws Throwable {
-        //I'm here
+        nameProductList = new ArrayList<>();
+        nameProductList = yourCartPage.getProductsFromYourCartWebPage();
+
+        for (int i = 0; i <= nameProductList.stream().count(); i++) {
+            if (nameProductList.contains(productName)) {
+                result = true;
+                break;
+            }
+        }
+        Assert.assertTrue("The product(s) should be here",result);
+        result = false;
+
+        result = yourCartPage.verifyExpectedProductPrice(productName,productPrice);
+        Assert.assertTrue(result);
+        result = false;
         loginPage.getDriver().quit();
     }
     //endregion
