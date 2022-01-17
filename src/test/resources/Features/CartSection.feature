@@ -44,6 +44,6 @@ Feature: Cart Section
 
 
     Examples:
-      | Product Name              | Second Product Name     | Third Product Name   |
-      | Sauce Labs Backpack       | Sauce Labs Bike Light   | Sauce Labs Onesie    |
+      | Product Name          | Second Product Name     | Third Product Name   |
+      | Sauce Labs Backpack   | Sauce Labs Bike Light   | Sauce Labs Onesie    |
     
