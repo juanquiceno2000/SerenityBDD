@@ -42,6 +42,7 @@ public class HomePage extends MyProjectPage {
                 firstBlockForAddCartXpath = firstBlockForAddCartXpath + (i + 1) + "]//button";
                 By addToCartButton = By.xpath(firstBlockForAddCartXpath);
                 clickOn(find(addToCartButton));
+                firstBlockForAddCartXpath = "//div[@id='inventory_container']//div[@class='inventory_item']//div[@class='inventory_item_description']//div[@class='inventory_item_label']//a//div/following::div[@class=\"pricebar\"][";
                 break;
             }
         }

@@ -53,6 +53,16 @@ public class AddToCartSteps {
         swagLabsHomePage.addToCartSpecificProduct(productName);
     }
 
+    @When("^Add to the cart a second (.+)$")
+    public void add_to_the_cart_a_second(String secondProductName) throws Throwable {
+        swagLabsHomePage.addToCartSpecificProduct(secondProductName);
+    }
+
+    @When("^Add to the cart a third (.+)$")
+    public void add_to_the_cart_a_third(String thirdProductName) throws Throwable {
+        swagLabsHomePage.addToCartSpecificProduct(thirdProductName);
+    }
+
     @When("^navigate to Your Cart section$")
     public void navigate_to_your_cart_section() throws Throwable {
         swagLabsHomePage.navigateToYourCartSection();
