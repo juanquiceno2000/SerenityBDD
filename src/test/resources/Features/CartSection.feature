@@ -9,7 +9,6 @@ Feature: Cart Section
     And remove the <Product Name> just added
     Then the product with name <Product Name> just removed should not be listed any more
 
-
     Examples:
       | Product Name              |
       | Sauce Labs Backpack       |
@@ -26,7 +25,6 @@ Feature: Cart Section
     And remove the <Second Product Name> just added
     Then the product with name <Second Product Name> just removed should not be listed any more
 
-
     Examples:
       | Product Name              | Second Product Name     |
       | Sauce Labs Backpack       | Sauce Labs Bike Light   |
@@ -41,7 +39,6 @@ Feature: Cart Section
     And navigate to Your Cart section
     And remove all Products from Your Cart section
     #Then CheckOut Button should be disable (Feature not implemented)
-
 
     Examples:
       | Product Name          | Second Product Name     | Third Product Name   |
