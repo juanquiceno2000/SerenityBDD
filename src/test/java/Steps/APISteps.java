@@ -2,8 +2,6 @@ package Steps;
 
 import POJO.JsonBodyRequests.CreateBooking;
 import POJO.JsonBodyRequests.ReadBookingsIds;
-import PageObject.HomePage;
-import PageObject.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
