@@ -28,6 +28,6 @@ public class ReadBookingsIds {
         String data10 = readBookings.support.url;
         String data11 = readBookings.support.text;
 
-        return RestAssured.get("https://reqres.in/api/users?page=2").statusCode();
+        return RestAssured.get(LOCATION_BY_POST_CODE_AND_COUNTRY_URL).statusCode();
     }
 }
