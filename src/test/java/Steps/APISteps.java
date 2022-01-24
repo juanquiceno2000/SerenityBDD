@@ -24,7 +24,8 @@ public class APISteps {
     //region When
     @When("^sends Get Method$")
     public void sends_get_method() throws Throwable {
-        statusCode = ReadBookingsIds.GetBookingIds();
+        statusCode = ReadBookingsIds.deserializeFromJsonBookingIds();
+        Assert.assertTrue(ReadBookingsIds.deserializeFromXMLPhoneDetails());
     }
 
     @When("^sends Post Method$")
