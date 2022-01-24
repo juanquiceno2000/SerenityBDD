@@ -26,7 +26,6 @@ public class APISteps {
     public void sends_get_method() throws Throwable {
         statusCode = ReadBookingsIds.deserializeFromJsonBookingIds();
         Assert.assertTrue(ReadBookingsIds.deserializeFromXMLActionItem());
-        //This is just a Test
     }
 
     @When("^sends Post Method$")
