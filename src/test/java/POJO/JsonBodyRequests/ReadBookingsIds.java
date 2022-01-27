@@ -7,7 +7,6 @@ import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import io.restassured.RestAssured;
 import com.google.gson.*;
-
 import java.io.IOException;
 import java.util.Objects;
 
