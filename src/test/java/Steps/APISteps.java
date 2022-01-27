@@ -2,13 +2,9 @@ package Steps;
 
 import POJO.JsonBodyRequests.CreateBooking;
 import POJO.JsonBodyRequests.ReadBookingsIds;
-import PageObject.HomePage;
-import PageObject.LoginPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
 import org.junit.Assert;
 
 public class APISteps {
@@ -28,7 +24,8 @@ public class APISteps {
     //region When
     @When("^sends Get Method$")
     public void sends_get_method() throws Throwable {
-        statusCode = ReadBookingsIds.GetBookingIds();
+        statusCode = ReadBookingsIds.deserializeFromJsonBookingIds();
+        Assert.assertTrue(ReadBookingsIds.deserializeFromXMLActionItem());
     }
 
     @When("^sends Post Method$")

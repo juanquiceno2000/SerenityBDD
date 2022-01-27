@@ -74,7 +74,7 @@ public class LoginSteps {
 
     @Then("^the system grant access by leaving the user on the Home Page in \"([^\"]*)\" section$")
     public void the_system_grant_access_by_leaving_the_user_on_the_home_page_in_something_section(String tittleHomePage) throws Throwable {
-        if (swagLabsHomePage.getTextProductsTittleHomePage().equals(tittleHomePage)) {
+        if (swagLabsHomePage.getTextHomePageTitle().equals(tittleHomePage)) {
             result = true;
         }
         Assert.assertTrue(result);
