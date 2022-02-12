@@ -1,7 +1,4 @@
-package RecordingTests; /**
- * author Naveen Khunteta
- * License Under - Naveen AutomationLabs
- */
+package RecordingTests;
 
 import java.awt.AWTException;
 import java.awt.Dimension;

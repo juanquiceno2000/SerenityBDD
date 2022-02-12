@@ -81,7 +81,7 @@ public class LoginSteps {
         }
         Assert.assertTrue(result);
         result = false;
-        Thread.sleep(5000);
+        Thread.sleep(2000);
         loginPage.getDriver().quit();
         ScreenRecorder.stopRecording();
     }
