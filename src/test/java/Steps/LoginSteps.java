@@ -1,5 +1,6 @@
 package Steps;
 
+import RecordingTests.ScreenRecorder;
 import org.junit.Assert;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -21,6 +22,7 @@ public class LoginSteps {
     @Given("^a user in the Login Page$")
     public void a_user_in_the_login_page() throws Throwable {
         loginPage.open();
+        ScreenRecorder.startRecording("JQ Test");
     }
     //endregion
 
@@ -79,7 +81,9 @@ public class LoginSteps {
         }
         Assert.assertTrue(result);
         result = false;
+        Thread.sleep(2000);
         loginPage.getDriver().quit();
+        ScreenRecorder.stopRecording();
     }
     //endregion
 }
