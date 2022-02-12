@@ -1,6 +1,7 @@
 Feature: API
   Verify APIs with RestAssured
 
+
   Scenario: GET Method
     Given a user in the Login Page
     When sends Get Method
