@@ -4,7 +4,7 @@ Feature: API
 
   Scenario: GET Method
     When sends Get Method
-    Then the response code should be "400"
+    Then the response code should be "200"
 
   Scenario: POST Method
     When sends Post Method
