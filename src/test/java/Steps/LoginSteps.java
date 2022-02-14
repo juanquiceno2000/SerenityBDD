@@ -19,10 +19,10 @@ public class LoginSteps {
     //@Steps
 
     //region Given
-    @Given("^a user in the Login Page$")
-    public void a_user_in_the_login_page() throws Throwable {
+    @Given("^a user in the Login Page for \"([^\"]*)\" scenario$")
+    public void a_user_in_the_login_page_for_something_scenario(String scenarioName) throws Throwable {
+        ScreenRecorder.startRecording(scenarioName);
         loginPage.open();
-        ScreenRecorder.startRecording("JQ Test");
     }
     //endregion
 

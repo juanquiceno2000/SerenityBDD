@@ -5,7 +5,7 @@ Feature: Login to the App
 
 
   Scenario: Login Failed due to incorrect UserName
-    Given a user in the Login Page
+    Given a user in the Login Page for "Login Failed due to incorrect UserName" scenario
     When the user enters an incorrect UserName
     And the user enters expected Password
     And click on Login Button
@@ -13,7 +13,7 @@ Feature: Login to the App
 
 
   Scenario: Login Failed due to incorrect Password
-    Given a user in the Login Page
+    Given a user in the Login Page for "Login Failed due to incorrect Password" scenario
     When the user enters expected UserName
     And the user enters an incorrect Password
     And click on Login Button
@@ -21,7 +21,7 @@ Feature: Login to the App
 
 
   Scenario: Validate Mandatory UserName Field
-    Given a user in the Login Page
+    Given a user in the Login Page for "Validate Mandatory UserName Field" scenario
     When the user doesn't enter UserName in the Username field
     And the user enters expected Password
     And click on Login Button
@@ -29,7 +29,7 @@ Feature: Login to the App
 
 
   Scenario: Validate Mandatory Password Field
-    Given a user in the Login Page
+    Given a user in the Login Page for "Validate Mandatory Password Field" scenario
     When the user enters expected UserName
     And the user doesn't enter Password in the Password field
     And click on Login Button
@@ -37,7 +37,7 @@ Feature: Login to the App
 
 
   Scenario: Login Successfully
-    Given a user in the Login Page
+    Given a user in the Login Page for "Login Successfully" scenario
     When the user enters expected UserName
     And the user enters expected Password
     And click on Login Button
